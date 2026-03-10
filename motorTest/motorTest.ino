@@ -1,5 +1,5 @@
 //test code for running motor speed
-int Vin;
+int Vin=0;
 void setup() {
   // put your setup code here, to run once:
 pinMode(A2, INPUT);
