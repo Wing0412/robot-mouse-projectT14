@@ -1,4 +1,4 @@
-//test code for running motor speed
+//test code for running motor speed control
 int Vin=0;
 void setup() {
   // put your setup code here, to run once:
