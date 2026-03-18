@@ -1,4 +1,4 @@
-//test code for running motor speed
+//Version 1.1! 
 int VinL = 0;
 int VinR = 0;
 int relay = 0;
