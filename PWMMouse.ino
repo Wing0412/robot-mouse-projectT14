@@ -17,6 +17,8 @@ void loop() {
   if (relay >= 2) {
     VinL = analogRead(A0);  //reads A0 voltage
     VinR = analogRead(A2);  //reads A2 voltage
+    // NEW COMMENT:
+ // Convert sensor inputs to digital values for motor control decision making
     if ((VinL <= 3000) && (VinR >= 3000)) { //looks for each of 4 situations and controls the motors to turn towards a different situation
       digitalWrite(A3, 0);
       digitalWrite(A1, 1);
@@ -36,6 +38,8 @@ void loop() {
   relay = relay + 1;
 
   //delay for stability
+  // NEW COMMENT:
+ // Delay added to stabilise motor switching and prevent erratic behaviour
   delay(5);
   //turns off motors for off-periods of PWM
   digitalWrite(A3, 0);
